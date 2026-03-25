@@ -2,114 +2,103 @@
 <html lang="ru" class="page">
     <head>
         <meta charset="utf-8">
-        <meta name="" content="">
         <title>Портфолио</title>
         <link rel="stylesheet" href="">
     </head>
-    <body class="page-body">
-        <header class="page-header">
-            <div class="conteiner">
-                <nav class="navbar">
-                    <ul class="navbar-list">
-                        <li  class="navbar-item"><a class="navbar-link" href="#intro">Главная</a></li>
-                        <li class="navbar-item"><a class="navbar-link" href="#about-me">Обо мне</a></li>
-                        <li class="navbar-item"><a class="navbar-link" href="#skills">Навыки и стек</a></li>
-                        <li class="navbar-item"><a class="navbar-link" href="#projects">Проекты</a></li>
-                        <li class="navbar-item"><a class="navbar-link" href="#contacts">Связаться со мной</a></li>
-                    </ul>
-                </nav>
+    <body>
+        <nav>
+            <ul>
+                <li ><a class="navbar-link" href="#intro">Главная</a></li>
+                <li><a class="navbar-link" href="#about">Обо мне</a></li>
+                <li><a class="navbar-link" href="#skills">Навыки и стек</a></li>
+                <li><a class="navbar-link" href="#projects">Проекты</a></li>
+            </ul>
+            <div class="contact-bottom-container">
+                <a class="contact-bottom orange" href="#form">
+                    <span class="contact-bottom-text">Связаться со мной</span>
+                </a>
             </div>
-        </header>
-        <main>
-            <section class="intro" id="intro">
-                <div class="container">
-                    <div class="intro-content">
-                        <h1 class="intro-title">Татьяна Волынец</h1>
-                        <div class="intro-text-wrapper">
-                            <p>Разрабатываю сайты-визитки и рекламные лендинги</p>
-                        </div>
-                        <div class="intro-image">
-                            <img src="images/main.png" alt="Компьютер с цветком на столе">
-                        </div>
-                    </div>
+        </nav>
+            
+        <section class="container" id="intro">
+            <h1 class="intro-head">Татьяна Волынец</h1>
+            <p class="intro-desc">Владею навыками адаптивной и кроссбраузерной вёрстки,разрабатываю сайты-визитки и рекламные лендинги.</p>
+            <img class="intro-image" src="/images/main.png" alt="Абстрактная картинка компьютера">
+        </section>
+
+        <section class="container" id="about">
+            <div class="about-details">
+                <h1 class="about-salute">Привет я веб-разработчик</h1>
+                <p class="about-descript">Я Frontend-разработчик, отвечаю за то, как сайт выглядит и работает для пользователя. 
+                    Дизайнер создает макет, а я превращаю его в код — так, чтобы пользователю было удобно взаимодействовать со страницей.
+                </p>
+            </div>
+            <figure class="about-image">
+                <img src="/images/" alt="Фотография автора портфолио">
+            </figure>
+        </section>
+
+        <section class="container" id="skills">
+            <h1 class="skills-head">Навыки и стек технологий</h1>
+            <div class="skills-table">
+                <div class="skills-card">
+                    <section class="skills-card-section">
+                        <img class="image-skills-card" src="/icons/Development.svg" alt="Иконка програмный код">
+                        <h2 class="skills-card-title">Разработка сайтов</h2>
+                        <p class="skills-card-text-wrapper">Владею навыками адаптивной и кроссбраузерной вёрстки на HTML и CSS, 
+                            программирую на JavaScript, знаю основы DevOps</p>
+                    </section>
+                    <section class="skills-card-section">
+                        <h3 class="skills-card-subtitle">Языки</h3>
+                        <ul class="skills-card-list">
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>javaScript</li>
+                        </ul>
+                        <h3 class="skills-card-subtitle">Инструменты</h3>
+                        <ul class="skills-card-list">
+                            <li>VS Code</li>
+                            <li>GitHub</li>
+                            <li>Git</li>
+                        </ul>
+                    </section>
                 </div>
-            </section>
-
-            <section id="about-me">
-                <h1>Привет я веб-разработчик</h1>
-                <p>Я занимаюсь frontend-разработкой сайтов, отвечаю за то, как сайт выглядит и работает для пользователя.</p>
-                <p>Дизайнер создает макет, а я превращаю его в код — так, чтобы пользователю было удобно взаимодействовать со страницей.</p>
-                <img src="images/1.jpg" alt="Мое фото"  width="300" height="500">
-            </section>
-            <section id="skills">
-                <h1>Навыки и стек технологий</h1>
-                <table>
-                    <tr>
-                        <th>Разработка сайтов</th>
-                        <th>Дизайн</th>
-                        <th>Soft skills</th>
-                    </tr>
-                    <tr>
-                        <td>
-                            Вёрстка макетов в интерактивные веб-страницы с использованием HTML и CSS
-                        </td>
-                        <td>
-                            Разработка адаптивного дизайна — создание интерфейсов, корректно отображающихся на устройствах любого размера
-                        </td>
-                        <td>
-                            Это компетенции, которые помогают человеку эффективно работать с людьми, решать задачи и адаптироваться к новым условиям
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Языки:</td>
-                        <td>Инструменты:</td>
-                        <td>Навыки:</td>
-                    </tr>
-                    <tr>
-                        <td>HTML, CSS, JavaScript</td>
-                        <td>
-                            Figma, jQuery, RestAPI, React, LESS, Grid Layout, FlexBox
-                        </td>
-                        <td>Креативность, умение работать в команде, стрессоустойчивость, ответственность</td>
-                    </tr>
-                    <tr>
-                        <td>
-                            Инструменты:
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>VS Code Github Git</td>
-                    </tr>
-
-                </table>
-            </section>
-            <section id="projects">
-                <h1>Проекты</h1>
-            </section>
-            <section id="contacts">
-                <h1>Хотите заказать сайт?</h1>
-                <p>Напишите мне, чтобы обсудить детали.</p>
-                <img src="images/form.png" alt="Печатает на компьютере">
-                <form>
-                    <input type="text" placeholder="Имя">
-                    <input type="email" placeholder="E-mail">
-                    <input type="text" placeholder="Расскажите про свою задачу">
-                    <button type="submit">Отправить</button>
-                </form>
-            </section>
-            <section class="page-section-reviews">
-                <h1>Отзывы</h1>
-                <p>Люди, с которыми я работала, остаются довольны результатом.</p>
-                <img src="images/photo.png" alt="Мужчина довольный моей работой">
-                <p>Текст отзыва</p>
-                <p>Имя Фамилия <br> Компания, город</p>
-            </section>
-            <section>
-                <h2>Договоримся о сотрудничестве</h2>
-                <p>У вас есть идея проекта или предложение о работе? Напишите мне. Я открыта к разным вариантам сотрудничества.</p>
-                <a href="">Связаться с разработчиком</a>
-            </section>
-        </main>
+                <div class="skills-card">
+                    <section class="skills-card-section">
+                        <img class="image-skills-card" src="/icons/Design.svg" alt="Иконка дизайна">
+                        <h2 class="skills-card-title">Дизайн</h2>
+                        <p class="skills-card-text-wrapper">Знаю основы UX/UI-дизайна, автоматизирую работу в Figma</p>
+                    </section>
+                    <section class="skills-card-section">
+                        <h3 class="skills-card-subtitle">Инструменты</h3>
+                        <ul class="skills-card-list">
+                            <li>Figma</li>
+                            <li>FlexBox</li>
+                            <li>Grid Layout</li>
+                            <li>jQuery</li>
+                        </ul>
+                    </section>
+                </div>
+                <div class="skills-card">
+                    <section class="skills-card-section">
+                        <img class="image-skills-card" src="/icons/SoftSkills.svg" alt="Иконка коммуникация">
+                        <h2 class="skills-card-title">Soft skills</h2>
+                        <p class="skills-card-text-wrapper">Я умею общаться с людьми, эффективно организовывать своё время, 
+                            творчески мыслить, принимать решения и брать на себя ответственность.</p>
+                    </section>
+                    <section class="skills-card-section">
+                        <h3 class="skills-card-subtitle">Навыки</h3>
+                        <ul class="skills-card-list">
+                            <li>Срессоустойчивость</li>
+                            <li>Коммуникабельность</li>
+                            <li>Ответственность</li>
+                            <li>Креативность</li>
+                        </ul>
+                    </section>
+                </div>
+            </div>
+        </section>
+       
         <footer>
             <a href="https://ru.freepik.com/free-vector/software-integration-conceptillustration_18352184.htm#page=2&query=вебразработка&position=7&from_view=search&track=sp h">
                 Изображение-1 от Storyset на Freepik.
