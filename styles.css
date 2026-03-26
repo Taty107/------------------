@@ -1,0 +1,43 @@
+@font-face {
+    font-family: "Tilda Sans";
+    src: url(./font/TildaSans-Black.ttf) format(ttf);
+}
+
+@font-face {
+    font-family: "Tilda Sans";
+    src: url(./font/TildaSans-Bold.ttf) format(ttf);
+}
+
+@font-face {
+    font-family: "Tilda Sans";
+    src: url(./font/TildaSans-ExtraBold.ttf) format(ttf);
+}
+
+@font-face {
+    font-family: "Tilda Sans";
+    src: url(./font/TildaSans-Light.ttf) format(ttf);
+}
+
+@font-face {
+    font-family: "Tilda Sans";
+    src: url(./font/TildaSans-Medium.ttf) format(ttf);
+}
+
+@font-face {
+    font-family: "Tilda Sans";
+    src: url(./font/TildaSans-Regular.ttf) format(ttf);
+}
+
+@font-face {
+    font-family: "Tilda Sans";
+    src: url(./font/TildaSans-Semibold.ttf) format(ttf);
+}
+
+.navbar-link {
+    
+}
+
+.contact-bottom-container {
+    text-align: right;
+    
+}

@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <title>Портфолио</title>
-        <link rel="stylesheet" href="">
+        <link rel="stylesheet" href="styles.css">
     </head>
     <body>
         <nav>
@@ -19,114 +19,232 @@
                 </a>
             </div>
         </nav>
-            
-        <section class="container" id="intro">
-            <h1 class="intro-head">Татьяна Волынец</h1>
-            <p class="intro-desc">Владею навыками адаптивной и кроссбраузерной вёрстки,разрабатываю сайты-визитки и рекламные лендинги.</p>
-            <img class="intro-image" src="/images/main.png" alt="Абстрактная картинка компьютера">
-        </section>
+        <main>   
+            <section class="container" id="intro">
+                <h1 class="header">Татьяна Волынец</h1>
+                <p class="intro-desc">Владею навыками адаптивной и кроссбраузерной вёрстки,разрабатываю сайты-визитки и рекламные лендинги.</p>
+                <img class="intro-image" src="/images/main.png" alt="Абстрактная картинка компьютера">
+            </section>
 
-        <section class="container" id="about">
-            <div class="about-details">
-                <h1 class="about-salute">Привет я веб-разработчик</h1>
-                <p class="about-descript">Я Frontend-разработчик, отвечаю за то, как сайт выглядит и работает для пользователя. 
-                    Дизайнер создает макет, а я превращаю его в код — так, чтобы пользователю было удобно взаимодействовать со страницей.
-                </p>
-            </div>
-            <figure class="about-image">
-                <img src="/images/" alt="Фотография автора портфолио">
-            </figure>
-        </section>
+            <section class="container" id="about">
+                <div class="about-details">
+                    <h1 class="about-salute">Привет я веб-разработчик</h1>
+                    <p class="about-desc">Я Frontend-разработчик, отвечаю за то, как сайт выглядит и работает для пользователя. 
+                        Дизайнер создает макет, а я превращаю его в код — так, чтобы пользователю было удобно взаимодействовать со страницей.
+                    </p>
+                </div>
+                <figure class="about-image">
+                    <img src="/images/" alt="Фотография автора портфолио">
+                </figure>
+            </section>
 
-        <section class="container" id="skills">
-            <h1 class="skills-head">Навыки и стек технологий</h1>
-            <div class="skills-table">
-                <div class="skills-card">
-                    <section class="skills-card-section">
-                        <img class="image-skills-card" src="/icons/Development.svg" alt="Иконка програмный код">
-                        <h2 class="skills-card-title">Разработка сайтов</h2>
-                        <p class="skills-card-text-wrapper">Владею навыками адаптивной и кроссбраузерной вёрстки на HTML и CSS, 
-                            программирую на JavaScript, знаю основы DevOps</p>
-                    </section>
-                    <section class="skills-card-section">
-                        <h3 class="skills-card-subtitle">Языки</h3>
-                        <ul class="skills-card-list">
-                            <li>HTML</li>
-                            <li>CSS</li>
-                            <li>javaScript</li>
-                        </ul>
-                        <h3 class="skills-card-subtitle">Инструменты</h3>
-                        <ul class="skills-card-list">
-                            <li>VS Code</li>
-                            <li>GitHub</li>
-                            <li>Git</li>
-                        </ul>
-                    </section>
+            <section class="container" id="skills">
+                <h1 class="header">Навыки и стек технологий</h1>
+                <div class="skills-table">
+                    <div class="skills-card">
+                        <section class="skills-card-section">
+                            <img class="image-skills-card" src="/icons/Development.svg" alt="Иконка програмный код">
+                            <h2 class="skills-card-title">Разработка сайтов</h2>
+                            <p class="skills-card-text-wrapper">Владею навыками адаптивной и кроссбраузерной вёрстки на HTML и CSS, 
+                                программирую на JavaScript, знаю основы DevOps</p>
+                        </section>
+                        <section class="skills-card-section">
+                            <h3 class="skills-card-subtitle">Языки</h3>
+                            <ul class="skills-card-list">
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>javaScript</li>
+                            </ul>
+                            <h3 class="skills-card-subtitle">Инструменты</h3>
+                            <ul class="skills-card-list">
+                                <li>VS Code</li>
+                                <li>GitHub</li>
+                                <li>Git</li>
+                            </ul>
+                        </section>
+                    </div>
+                    <div class="skills-card">
+                        <section class="skills-card-section">
+                            <img class="image-skills-card" src="/icons/Design.svg" alt="Иконка дизайна">
+                            <h2 class="skills-card-title">Дизайн</h2>
+                            <p class="skills-card-text-wrapper">Знаю основы UX/UI-дизайна, автоматизирую работу в Figma</p>
+                        </section>
+                        <section class="skills-card-section">
+                            <h3 class="skills-card-subtitle">Инструменты</h3>
+                            <ul class="skills-card-list">
+                                <li>Figma</li>
+                                <li>FlexBox</li>
+                                <li>Grid Layout</li>
+                                <li>jQuery</li>
+                            </ul>
+                        </section>
+                    </div>
+                    <div class="skills-card">
+                        <section class="skills-card-section">
+                            <img class="image-skills-card" src="/icons/SoftSkills.svg" alt="Иконка коммуникация">
+                            <h2 class="skills-card-title">Soft skills</h2>
+                            <p class="skills-card-text-wrapper">Я умею общаться с людьми, эффективно организовывать своё время, 
+                                творчески мыслить, принимать решения и брать на себя ответственность.</p>
+                        </section>
+                        <section class="skills-card-section">
+                            <h3 class="skills-card-subtitle">Навыки</h3>
+                            <ul class="skills-card-list">
+                                <li>Срессоустойчивость</li>
+                                <li>Коммуникабельность</li>
+                                <li>Ответственность</li>
+                                <li>Креативность</li>
+                            </ul>
+                        </section>
+                    </div>
                 </div>
-                <div class="skills-card">
-                    <section class="skills-card-section">
-                        <img class="image-skills-card" src="/icons/Design.svg" alt="Иконка дизайна">
-                        <h2 class="skills-card-title">Дизайн</h2>
-                        <p class="skills-card-text-wrapper">Знаю основы UX/UI-дизайна, автоматизирую работу в Figma</p>
-                    </section>
-                    <section class="skills-card-section">
-                        <h3 class="skills-card-subtitle">Инструменты</h3>
-                        <ul class="skills-card-list">
-                            <li>Figma</li>
-                            <li>FlexBox</li>
-                            <li>Grid Layout</li>
-                            <li>jQuery</li>
-                        </ul>
-                    </section>
+            </section>
+
+            <section class="container" id="projects">
+                <h1 class="header">Проекты</h1>
+                <div class="projects-table">
+                    <figure class="card">
+                        <a class="card-image-link" href="#"><img src="/images/Снимок экрана 2026-03-26 155326.png" alt="Сайт экскурсии по Санкт-Петербургу"></a>
+                    </figure>
+                    <figure class="card">
+                        <a class="card-image-link" href="#"><img src="/images/screenshot.png"></a>
+                    </figure>
+                    <figure class="card">
+                        <a class="card-image-link" href="#"><img src="/images/screenshot.png"></a>
+                    </figure>
+                    <figure class="card">
+                        <a class="card-image-link" href="#"><img src="/images/screenshot.png"></a>
+                    </figure>
+                    <figure class="card">
+                        <a class="card-image-link" href="#"><img src="/images/screenshot.png"></a>
+                    </figure>
+                    <figure class="card">
+                        <a class="card-image-link" href="#"><img src="/images/screenshot.png"></a>
+                    </figure>
                 </div>
-                <div class="skills-card">
-                    <section class="skills-card-section">
-                        <img class="image-skills-card" src="/icons/SoftSkills.svg" alt="Иконка коммуникация">
-                        <h2 class="skills-card-title">Soft skills</h2>
-                        <p class="skills-card-text-wrapper">Я умею общаться с людьми, эффективно организовывать своё время, 
-                            творчески мыслить, принимать решения и брать на себя ответственность.</p>
-                    </section>
-                    <section class="skills-card-section">
-                        <h3 class="skills-card-subtitle">Навыки</h3>
-                        <ul class="skills-card-list">
-                            <li>Срессоустойчивость</li>
-                            <li>Коммуникабельность</li>
-                            <li>Ответственность</li>
-                            <li>Креативность</li>
-                        </ul>
-                    </section>
+                    <a class="project-bottom orange" href="https://github.com/Taty107">
+                        <span class="project-bottom-text">Посмотреть на GitHub</span>
+                    </a>
+            </section>
+
+            <section class="container" id="form">
+                <div class="header-container">
+                    <h1 class="header">Хотите заказать сайт?</h2>
+                    <p class="form-desc">Напишите мне, чтобы обсудить детали.</p>
                 </div>
+                <figure class="image-form">
+                    <img src="/images/form.png" alt="Абстрактная картинка рук печатающих на компьютере">
+                </figure>
+                <form class="contacts-form">
+                    <input type="text" placeholder="Имя">
+                    <input type="e-mail" placeholder="E-mail">
+                    <input type="text" placeholder="Расскажите про свою задачу">
+                    <button type="submit">Отправить</button>
+                </form>
+            </section>
+
+            <section class="container">
+                <h1 class="header">Отзывы</h1>
+                <p class="reviews-desc">Люди, с которыми я работала, остаются довольны результатом.</p>
+                <figure class="reviews-card">
+                    <div class="reviews-photo">
+                        <img src="/images/photo.png" alt="фото клиента">
+                    </div>
+                    <figcaption class="reviews-caption">
+                        <p class="reviews-text">«Текст отзыва»</p>
+                        <p class="reviews-info">Имя Фамилия</p>
+                        <p class="reviews-info">Компания, Город</p>
+                    </figcaption>
+                </figure>
+                <div class="reviews-toggle">
+                    <button class="reviews-toggle-button" type="button">
+                        <img 
+                            class="reviews-toggle-arrow" 
+                            src="icons/Arrow-L.svg" 
+                            alt="Стрелка влево"
+                        />
+                        <img 
+                            class="reviews-toggle-arrow icon-hover"
+                            src="icons/Arrow-L-white.svg" 
+                            alt="Стрелка влево" 
+                        />
+                    </button>
+
+                    <button class="reviews-toggle-button" type="button">
+                        <img 
+                            class="reviews-toggle-arrow" 
+                            src="icons/Arrow-R.svg" 
+                            alt="Стрелка вправо" 
+                        />
+                        <img 
+                            class="reviews-toggle-arrow icon-hover" 
+                            src="icons/Arrow-R-white.svg" 
+                            alt="Стрелка вправо" 
+                        />
+                    </button>
+                </div>
+            </section>
+       </main>
+       <aside class="container" id="letstalk">
+        <div class="letstalk-card">
+            <h2 class="letstalk-header">Договоримся о сотрудничестве</h2>
+            <p class="letstalk-desc">У вас есть идея проекта или предложение о работе? Напишите мне. Я открыта к разным вариантам сотрудничества.</p>
+            <div class="letstalk-bottom">
+                <a class="letstalk-bottom-link" href="#form">
+                    <span class="contact-bottom-text">Связаться со мной</span>
+                </a>
             </div>
-        </section>
-       
+        </div>
+       </aside>
         <footer>
-            <a href="https://ru.freepik.com/free-vector/software-integration-conceptillustration_18352184.htm#page=2&query=вебразработка&position=7&from_view=search&track=sp h">
-                Изображение-1 от Storyset на Freepik.
-            </a> 
+            <div class="footer-link-card">
+                <div class="footer-link-image">
+                    <a class="footer-link" href="#">
+                        <img src="/icons/TG.svg" alt="иконка телеграма">
+                        <img src="/icons/TG-white.svg">
+                    </a>
+                </div>
+                <div class="footer-link-image">
+                    <a class="footer-link" href="#">
+                        <img src="/icons/Habr.svg" alt="иконка Хабра">
+                        <img src="/icons/Habr-white.svg">
+                    </a>
+                </div>
+                <div class="footer-link-image">
+                    <a class="footer-link" href="#">
+                        <img src="/icons/Email.svg" alt="иконка e-mail">
+                        <img src="/icons/Email-white.svg">
+                    </a>
+                </div>
+            </div>
+            <p>
+                <a href="https://ru.freepik.com/free-vector/software-integration-conceptillustration_18352184.htm#page=2&query=вебразработка&position=7&from_view=search&track=sp h">
+                    Изображение-1 от Storyset на Freepik.
+                </a> 
 
-            <a href="https://ru.freepik.com/free-vector/code-typing-conceptillustration_10259340.htm#&position=12&from_vie w=author">
-                Изображение-2 от Storyset на Freepik.
-            </a> 
+                <a href="https://ru.freepik.com/free-vector/code-typing-conceptillustration_10259340.htm#&position=12&from_vie w=author">
+                    Изображение-2 от Storyset на Freepik.
+                </a> 
 
-            <a href="https://www.flaticon.com/ru/free- icons/html" title="html иконки">
-                Иконка "Html" от Frey Wazza на Flaticon.
-            </a> 
+                <a href="https://www.flaticon.com/ru/free- icons/html" title="html иконки">
+                    Иконка "Html" от Frey Wazza на Flaticon.
+                </a> 
 
-            <a href="https://www.flaticon.com/ru/free- icons/" title="телеграмма иконки">
-                Иконка «Телеграм» от Freepik на Flaticon.
-            </a>
+                <a href="https://www.flaticon.com/ru/free- icons/" title="телеграмма иконки">
+                    Иконка «Телеграм» от Freepik на Flaticon.
+                </a>
 
-            <a href="https://www.flaticon.com/ru/free- icons/" title="общение иконки">
-                Иконка «Общение» от Ilham Fitrotul Hayat на Flaticon.
-            </a> 
+                <a href="https://www.flaticon.com/ru/free- icons/" title="общение иконки">
+                    Иконка «Общение» от Ilham Fitrotul Hayat на Flaticon.
+                </a> 
 
-            <a href="https://www.flaticon.com/ru/free- icons/-" title="Дизайн сайта иконки">
-                Иконка «Дизайн сайта» от Freepik на Flaticon.
-            </a> 
+                <a href="https://www.flaticon.com/ru/free- icons/-" title="Дизайн сайта иконки">
+                    Иконка «Дизайн сайта» от Freepik на Flaticon.
+                </a> 
 
-            <a href="https://www.flaticon.com/ru/free- icons/-" title="Эл. адрес иконки">
-                Иконка «Эл.адрес» от Those Icons на Flaticon.
-            </a>
+                <a href="https://www.flaticon.com/ru/free- icons/-" title="Эл. адрес иконки">
+                    Иконка «Эл.адрес» от Those Icons на Flaticon.
+                </a>
+            </p>
         </footer>
     </body>
 </html>
