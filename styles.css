@@ -1,66 +1,212 @@
 @font-face {
     font-family: "Tilda Sans";
+    font-style: normal;
+    font-weight: 300;
     src: url(./font/TildaSans-Black.ttf) format(ttf);
 }
 
 @font-face {
     font-family: "Tilda Sans";
+    font-style: normal;
+    font-weight: 400;
     src: url(./font/TildaSans-Bold.ttf) format(ttf);
 }
 
 @font-face {
     font-family: "Tilda Sans";
+    font-style: normal;
+    font-weight: 500;
     src: url(./font/TildaSans-ExtraBold.ttf) format(ttf);
 }
 
 @font-face {
     font-family: "Tilda Sans";
+    font-style: normal;
+    font-weight: 600;
     src: url(./font/TildaSans-Light.ttf) format(ttf);
 }
 
 @font-face {
     font-family: "Tilda Sans";
+    font-style: normal;
+    font-weight: 700;
     src: url(./font/TildaSans-Medium.ttf) format(ttf);
 }
 
 @font-face {
     font-family: "Tilda Sans";
+    font-style: normal;
+    font-weight: 800;
     src: url(./font/TildaSans-Regular.ttf) format(ttf);
 }
 
 @font-face {
     font-family: "Tilda Sans";
+    font-style: normal;
+    font-weight: 900;
     src: url(./font/TildaSans-Semibold.ttf) format(ttf);
 }
 
-.page {
+body {
     font-family: "Tilda Sans" , sans-serif;
-}
-
-.navbar-list {
-    display: flex;
-    list-style: none;
-    align-items: center;
-    flex-wrap: nowrap;
     margin: 0;
     padding: 0;
 }
 
-.navbar-link {
-    display: inline-block;
-    text-align: center;
-    font-size: 25px;
-    color: #000000;
+a {
     text-decoration: none;
-    width: 250px;
-    font-weight: 700;
-    padding-left: 50px;
-    margin-left: 45px;
+    color: black;
 }
 
-.contact-bottom-container {
-    text-align: right;
+html {
+    scroll-behavior: smooth;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    justify-content:flex-start;
+}
+
+.navbar-list {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    width: 50%;
+    margin: 45px 0 45px 25%;
+    padding: 0;
+    justify-content: space-around;
+}
+
+.navbar-link {
     font-size: 25px;
     font-weight: 700;
-    list-style: none
+    line-height: 36px;
+}
+
+.contact-bottom {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-size: 25px;
+    margin-top: 35px;
+
+}
+
+.contact-bottom-text {
+    color: #FF9235;
+    border-color: #FF9235;
+    border-width: 3px;
+    border-style: solid;
+    border-radius: 15px;
+    padding: 9px 22px;
+    font-weight: 600;
+    margin: 0;
+    line-height: 27px;
+}
+
+.contact-bottom-text:hover {
+    background-color: #FF9235;
+    color: #fff;
+}
+
+.header {
+    font-family: "TildaSans", sans-serif;
+    font-weight: 700;
+    font-size: 54px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.desc-font {
+    font-family: "TildaSans", sans-serif;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 54px;
+    text-align: center;
+}
+
+.intro-desc {
+    text-align: center;
+    font-size: 36px;
+}
+
+.about-details {
+    display: block;
+    width: 100%;
+    padding: 75px 0;
+    background-color: #5DD9C8;
+}
+
+.about-image {
+    width: 30vw;
+    height: 40vw;
+    margin: -100px 0 76px 0;
+    padding: 0;
+    border: 5px solid #5dd9c8;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.about-image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+img {
+    border-radius: 10px;
+}
+
+.about-desc {
+    font-size: 36px;
+    margin: 65px 45px;
+}
+
+.skills-table {
+    display: flex;
+    border: 1px solid #5dd9c8;
+    text-align: center;
+    font-size: 36px;
+
+}
+
+.skills-card-title {
+ 
+}
+
+.skills-card-list {
+    text-decoration: none;
+}
+
+.skills-card-subtitle {
+    color: #FF9235;
+}
+
+.project-bottom-text {
+    color: #FF9235;
+    border-color: #FF9235;
+    border-width: 3px;
+    border-style: solid;
+    border-radius: 15px;
+    padding-left: 25px;
+    padding-right: 25px;
+    font-weight: 700;
+    font-size: 25px;
+    list-style: none;
+}
+
+.project-bottom-text:hover {
+    background-color: #FF9235;
+    color: #fff;
 }
