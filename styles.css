@@ -174,39 +174,131 @@ img {
 }
 
 .skills-table {
-    display: flex;
+    width: 80%;
+    display: grid;
+    border-radius: 12px;
     border: 1px solid #5dd9c8;
-    text-align: center;
-    font-size: 36px;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-bottom: 70px;
+}
 
+.skills-card {
+    border-left: 1px solid #5dd9c8;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    padding: 70px;
+}
+
+.skills-card:first-child {
+    border-left: 0px;
+}
+
+.skills-card-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.image-skills-card {
+    width: 72px;
+    height: 72px;
 }
 
 .skills-card-title {
- 
+    padding: 0;
+    margin: 25px 0;
+    font-family: "TildaSans", sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 54px;
+    text-align: center;
+}
+
+.skills-card-text-wrapper {
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 45px;
+    text-align: center;
+    margin: 0;
+    padding: 0 0 12px 0px;
+    width: 100%;
 }
 
 .skills-card-list {
-    text-decoration: none;
+    font-size: 30px;
+    list-style: none;
+    font-weight: 400;
+    line-height: 45px;
+    text-align: center;
+    margin: 0;
+    padding: 0 0 32px 0;
+    width: 100%;
+}
+
+.skills-card-list:last-child {
+    padding: 0;
+}
+
+.projects-table {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2vw;
+    justify-content:center;
+}
+
+.projects-card {
+    padding: 0;
+    margin: 0;
+    width: 24vw;
+    height: 13.5vw;
+    box-sizing: border-box;
+    overflow: hidden;
+    border: 3px solid #8063a6;
+    border-radius: 12px;
+}
+
+.projects-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .skills-card-subtitle {
+    font-weight: 700;
+    line-height: 45px;
+    text-align: center;
+    font-size: 36px;
     color: #FF9235;
+    padding: 0;
+    margin: 12px 0;
+}
+
+.project-bottom {
+    padding: 15px 40px;
+    margin: 100px 0;
 }
 
 .project-bottom-text {
-    color: #FF9235;
-    border-color: #FF9235;
-    border-width: 3px;
-    border-style: solid;
+    padding: 15px 40px;
+    margin: 100px 0;
+    border: 3px solid #FF9235;
     border-radius: 15px;
-    padding-left: 25px;
-    padding-right: 25px;
-    font-weight: 700;
+    font-family: "TildaSans", sans-serif;
     font-size: 25px;
-    list-style: none;
+    font-weight: 700;
+    line-height: 30px;
+    text-align: center;
+    color: #FF9235;
 }
 
 .project-bottom-text:hover {
     background-color: #FF9235;
     color: #fff;
+}
+
+.header-container {
+    background-color: #5DD9C8;
+    width: 100%;
 }
