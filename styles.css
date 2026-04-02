@@ -48,14 +48,40 @@
 }
 
 body {
-    font-family: "Tilda Sans" , sans-serif;
     margin: 0;
     padding: 0;
 }
 
 a {
     text-decoration: none;
-    color: black;
+    color: inherit;
+}
+
+.a:visited {
+    text-decoration: none;
+    color: inherit;
+}
+
+button, input, textarea {
+    outline: none;
+    appearance: none;
+}
+
+button:focus, input:focus, textarea:focus {
+    outline: none;
+}
+
+.color-black {
+    /* черный цвет текста */
+    color: #141C3A;
+}
+.color-orange {
+    /* оранжевый цвет текста */
+    color: #FF9235;
+}
+.background-turquoise {
+    /* бирюзовый цвет фона */
+    background-color: #5dd9c8;
 }
 
 html {
@@ -298,7 +324,345 @@ img {
     color: #fff;
 }
 
+#form .header {
+    text-transform: none;
+    margin-bottom: 45px;
+}
+
 .header-container {
     background-color: #5DD9C8;
+    padding: 64px 0;
     width: 100%;
+}
+
+.form-desc {
+    padding: 0;
+    margin: 0;
+}
+
+.form-pic {
+    width: 35vw;
+    height: 35vw;
+    margin-left: 5vw;
+}
+
+.form-container {
+    width: 100%;
+    padding: 100px 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.form {
+    margin: 0 5vw;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.form-sender-data {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    border: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.form-field {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+.form-label {
+    margin: 0 0 10px 4px;
+    padding: 0;
+    font-family: "TildaSans", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 36px;
+    text-align: center;
+}
+
+.form-input {
+    margin: 0;
+    font-family: "TildaSans", sans-serif;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 54px;
+    border: 1px solid #FF9235;
+    border-radius: 12px;
+}
+
+.form-sender-data .form-input {
+    min-width: 150px;
+    max-width: 20vw;
+    padding: 0 6px;
+}
+
+.form-sender-data .form-field:first-child {
+    padding-right: 10px;
+}
+
+.form-text-body {
+    margin: 48px 0 0 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.form-text-body .form-input {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 6px;
+}
+.form-submit {
+    margin: 48px 0 0 0;
+    padding: 0;
+    width: 100%;
+    border: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+.form-button {
+    padding: 15px 40px;
+    margin: 0;
+    background-color: #ffffff;
+    border: 2px solid #ff9235;
+    border-radius: 15px;
+
+}
+.form-button:hover {
+    background-color: #ff9235;
+    color: #ffffff;
+}
+.form-button-text {
+    font-family: "TildaSans", sans-serif;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 30px;
+    text-align: center;
+    color: inherit;
+}
+
+#reviews .header {
+    margin: 64px 0;
+}
+
+.reviews-desc {
+    margin: 0;
+    padding: 0;
+    width: 50%;
+}
+
+.reviews-card {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.reviews-photo {
+    width: 20vw;
+    height: 15vw;
+    margin: 51px 0;
+    padding: 0;
+    border:  3px solid #5dd9c8;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.reviews-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.reviews-caption {
+    margin: 0;
+    padding: 0;
+}
+
+.reviews-text {
+    margin: 20px 0;
+    padding: 0;
+    font-family: "TildaSans", sans-serif;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 54px;
+    text-align: center;
+}
+.reviews-info {
+    margin: 0;
+    padding: 0;
+    font-family: "TildaSans", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: center;
+}
+
+.reviews-toggle {
+    margin: 41px 0 45px 0;
+    width: 138px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.reviews-toggle-button {
+    padding: 0 6px;
+    height: 40px;
+    border: 2px solid #ff9235;
+    border-radius: 20px;
+    background: #ffffff;
+}
+.reviews-toggle-button:hover {
+    background-color: #ff9235;
+}
+
+.reviews-toggle-button:hover .reviews-toggle-arrow {
+    display: none;
+}
+.reviews-toggle-button:hover .icon-hover {
+    display: block;
+}
+
+.letstalk-card {
+    margin: 0;
+    padding: 12px 3vw;
+    background-color: #8063a6;
+    border-radius: 12px;
+    width: 80%;
+    height: 166px;
+    display: flex;
+    flex-direction: row;
+    gap: 3vw;
+}
+
+.letstalk-header {
+    margin: auto 0;
+    color: #ffffff;
+    font-family: "Tilda Sans", sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 45px;
+    text-align: center;
+}
+
+.letstalk-desc {
+    margin: auto 0;
+    padding: 0;
+    color: #ffffff;
+    font-family: "Tilda Sans", sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+    text-align: center;
+}
+
+.letstalk-bottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.letstalk-bottom-link {
+    margin: 0;
+    padding: 15px 30px;
+    border: 2px solid #ffffff;
+    border-radius: 15px;
+    color: #ffffff;
+}
+
+.letstalk-bottom-link:hover {
+    color: #8063a6;
+    background-color: #ffffff;
+}
+
+.letstalk-bottom-text {
+    font-family: "TildaSans", sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30px;
+    text-align: center;
+    white-space: nowrap;
+    color: inherit;
+}
+
+footer {
+    margin: -95px 0 0 0;
+    padding: 95px 0 0 0;
+    background-color: #5dd9c8;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-link-card {
+    margin: 60px 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+}
+
+.footer-link {
+    height: 48px;
+    width: 48px;
+    box-sizing: border-box;
+    margin: 0 15px;
+    padding: 4px;
+    border: 2px solid #141c3a;
+    border-radius: 48px;
+}
+
+.footer-link:hover {
+    background-color: #8063a6;
+    border: 2px solid #8063a6;
+}
+
+.footer-social-icon {
+    height: 36px;
+    width: 36px;
+    object-fit: contain;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-link:hover .footer-social-icon {
+    display: none;
+}
+.icon-hover {
+    display: none;
+}
+.footer-link:hover .icon-hover {
+    display: block;
+}
+.footer-links {
+    margin: 30px 0 45px 0;
+    padding: 0;
+    font-family: "TildaSans", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
