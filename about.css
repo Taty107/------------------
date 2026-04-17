@@ -1,0 +1,27 @@
+.about-desc {
+    font-size: 36px;
+    margin: 65px 45px;
+}
+
+.about-details {
+    display: block;
+    width: 100%;
+    padding: 75px 0;
+    background-color: #5DD9C8;
+}
+
+.about-image {
+    width: 30vw;
+    height: 40vw;
+    margin: -100px 0 76px 0;
+    padding: 0;
+    border: 5px solid #5dd9c8;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.about-image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}

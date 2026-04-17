@@ -1,0 +1,62 @@
+.letstalk-card {
+    margin: 0;
+    padding: 12px 3vw;
+    background-color: #8063a6;
+    border-radius: 12px;
+    width: 80%;
+    height: 166px;
+    display: flex;
+    flex-direction: row;
+    gap: 3vw;
+}
+
+.letstalk-header {
+    margin: auto 0;
+    color: #ffffff;
+    font-family: "Tilda Sans", sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 45px;
+    text-align: center;
+}
+
+.letstalk-desc {
+    margin: auto 0;
+    padding: 0;
+    color: #ffffff;
+    font-family: "Tilda Sans", sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+    text-align: center;
+}
+
+.letstalk-bottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.letstalk-bottom-link {
+    margin: 0;
+    padding: 15px 30px;
+    border: 2px solid #ffffff;
+    border-radius: 15px;
+    color: #ffffff;
+}
+
+.letstalk-bottom-link:hover {
+    color: #8063a6;
+    background-color: #ffffff;
+}
+
+.letstalk-bottom-text {
+    font-family: "TildaSans", sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30px;
+    text-align: center;
+    white-space: nowrap;
+    color: inherit;
+}
